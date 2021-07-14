@@ -1,0 +1,27 @@
+package com.example.demo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringBootApp1Application implements CommandLineRunner {
+	
+	@Autowired
+	private Employee employee;
+	
+	@Override
+	public void run(String... args) throws Exception {
+		System.out.println("Employee ID :"+employee.getEid());
+		System.out.println("Employee Name :"+employee.getEname());
+		System.out.println("Employee City :"+employee.getEcity());
+		
+	}
+	
+	public static void main(String[] args) {
+		SpringApplication.run(SpringBootApp1Application.class, args);
+		System.out.println("Welcome To Spring Boot App");
+	}
+
+}

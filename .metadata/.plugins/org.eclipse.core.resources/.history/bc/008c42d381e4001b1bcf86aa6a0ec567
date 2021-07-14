@@ -1,0 +1,21 @@
+package com.demo.in;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Employee {
+	
+	public Employee() {
+	}
+	
+	private Integer eid;
+	private String ename, email;
+	
+	
+	public void displayEmployeeDetails()
+	{
+		System.out.println("Employee ID :"+eid);
+		System.out.println("Employee Name :"+ename);
+		System.out.println("Employee Mail:"+email);
+	}
+}

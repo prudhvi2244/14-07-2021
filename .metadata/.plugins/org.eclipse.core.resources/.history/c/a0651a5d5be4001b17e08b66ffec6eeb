@@ -1,0 +1,7 @@
+package com.demo.in;
+
+public class Employee {
+
+	public String ename;
+
+}

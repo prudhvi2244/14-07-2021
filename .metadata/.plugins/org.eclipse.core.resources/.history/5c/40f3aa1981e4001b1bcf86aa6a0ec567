@@ -1,0 +1,10 @@
+package com.demo.in;
+
+public class Employee {
+
+	public Employee() {
+	}
+	
+	private Integer eid;
+	private String ename, email;
+}

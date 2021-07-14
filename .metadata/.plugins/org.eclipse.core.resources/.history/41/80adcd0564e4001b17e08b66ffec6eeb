@@ -1,0 +1,5 @@
+server.port=9000
+
+employee.eid=1
+employee.ename=Raj
+employee.ecity=Hyderabad

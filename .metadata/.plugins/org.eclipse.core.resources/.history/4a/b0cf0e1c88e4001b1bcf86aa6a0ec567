@@ -1,0 +1,40 @@
+package com.example.demo.model;
+
+public class Student {
+
+	public Student()
+	{
+		
+	}
+	
+		
+	public Student(Integer sid, String sname, Double smarks) {
+		super();
+		this.sid = sid;
+		this.sname = sname;
+		this.smarks = smarks;
+	}
+
+	private Integer sid;
+	private String sname;
+	private Double smarks;
+	
+	public Integer getSid() {
+		return sid;
+	}
+	public void setSid(Integer sid) {
+		this.sid = sid;
+	}
+	public String getSname() {
+		return sname;
+	}
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+	public Double getSmarks() {
+		return smarks;
+	}
+	public void setSmarks(Double smarks) {
+		this.smarks = smarks;
+	}
+}

@@ -1,0 +1,13 @@
+package com.demo.in;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Employee {
+	
+	public Employee() {
+	}
+	
+	private Integer eid;
+	private String ename, email;
+}

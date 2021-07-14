@@ -1,0 +1,19 @@
+package com.demo.in;
+
+public class Employee {
+
+	public String ename;
+	
+	public Employee()
+	{}
+	
+	public Employee(String ename)
+	{this.ename=ename;}
+	
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+	
+	
+
+}

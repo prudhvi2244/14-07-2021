@@ -1,0 +1,13 @@
+package com.demo.in;
+
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+
+public class StudentClient {
+
+	public static void main(String[] args) {
+		
+		XmlBeanFactory factory
+
+	}
+
+}

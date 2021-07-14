@@ -1,0 +1,32 @@
+package com.demo.in;
+
+
+public class Student {
+
+	public Student() {
+		
+	}
+	
+	
+	private Integer sid;
+	private String sname;
+	private String scity;
+
+	
+
+	public void setSid(Integer sid) {
+		this.sid = sid;
+	}
+
+
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+
+	
+	public void setScity(String scity) {
+		this.scity = scity;
+	}
+
+	
+}

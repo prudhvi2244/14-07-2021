@@ -1,0 +1,25 @@
+package com.demo.in;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class EmployeeClient1 {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context=new AnnotationConfigApplicationContext("com.demo.in");
+		Employee emp=context.getBean("emp",Employee.class);
+		Address address=new Address();
+		address.setCity("Bangalore");
+		address.setState("Karnataka");
+		address.setStreet("MG ROAD");
+		emp.setEid(1);
+		emp.setEname("Raj Prudhvi");
+		emp.setEmail("raj@gmail.com");
+		emp.setAddress(address);
+		emp.displayEmployeeDetails();
+		
+
+	}
+
+}

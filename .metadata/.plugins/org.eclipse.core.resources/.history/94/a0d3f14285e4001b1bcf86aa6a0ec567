@@ -1,0 +1,35 @@
+package com.demo.in;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class EmployeeClient1 {
+	
+	/* emp1 : 1,Rajeev,rajeev@gmail.com - MG Road Mysore Karnataka
+	 * 
+	 * emp1==emp2
+	 * 
+	 */
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context=new AnnotationConfigApplicationContext("com.demo.in");
+		Employee emp1=context.getBean("emp",Employee.class);
+		Address address1=new Address("MG ROAD","Mysore","Karnataka");
+		emp1.setEid(1);
+		emp1.setEname("Rajeev");
+		emp1.setEmail("rajeev@gmail.com");
+		emp1.setAddress(address1);
+		emp1.displayEmployeeDetails();
+		
+		System.out.println("********************************************");
+		
+		Employee emp2=context.getBean("emp",Employee.class);
+		emp2.displayEmployeeDetails();
+		
+		System.out.println(emp1==emp2);
+		
+
+	}
+
+}

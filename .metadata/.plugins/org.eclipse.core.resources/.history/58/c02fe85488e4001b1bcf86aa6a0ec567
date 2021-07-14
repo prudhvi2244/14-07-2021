@@ -1,0 +1,28 @@
+package com.example.demo.model;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Student {
+
+	public Student() {
+
+	}
+
+	private Integer sid;
+	private String sname;
+	private Double smarks;
+	private Address address; // HAS-A Relationship
+
+	public void setSid(Integer sid) {
+		this.sid = sid;
+	}
+
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+
+	public void setSmarks(Double smarks) {
+		this.smarks = smarks;
+	}
+}

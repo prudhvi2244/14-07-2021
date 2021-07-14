@@ -1,0 +1,17 @@
+package com.demo.in;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class EmployeeClient1 {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context=new AnnotationConfigApplicationContext();
+		Employee emp=context.getBean("employee",Employee.class);
+		emp.displayEmployeeDetails();
+		
+
+	}
+
+}

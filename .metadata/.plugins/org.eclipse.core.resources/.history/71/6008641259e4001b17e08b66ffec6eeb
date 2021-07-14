@@ -1,0 +1,14 @@
+package com.demo.in;
+
+public class Client {
+
+	public static void main(String[] args) {
+		
+		Employee e1=new Employee("Prudhvi");
+		Employee e2=new Employee("Rajevev");
+		System.out.println("Employee Name:"+e1.ename);
+		System.out.println("Employee Name:"+e2.ename);
+
+	}
+
+}
